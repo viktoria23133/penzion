@@ -1,0 +1,290 @@
+
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+h1,h2,h3,h4,p,ul,ol,li,body {
+    margin: 0;
+    padding: 0;
+}
+*, *:after, *:before {
+    box-sizing: border-box;
+}
+a, input {
+    transition: all 0.3s ease-out;
+}
+.headerContainer {
+    width: 80%;
+    margin: auto;
+}
+.headerInfo {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0;
+
+}
+.headerInfo a {
+    color: #000;
+    text-decoration: none;
+}
+.headerInfo a:hover{
+    color: darkred;
+    text-decoration: underline;
+}
+.headerInfo i {
+    font-size: 30px;
+}
+
+.logo {
+    text-decoration: none;
+    text-align: center;
+    color: black;
+    font-size: 50px;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 10px;
+}
+
+.logo:hover {
+    color: darkred;
+}
+
+.menu {
+    text-align: center;
+    padding: 40px 0;
+    }
+
+.menu ul li {
+    display: inline-block;
+}
+.menu ul li a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: black;
+    font-weight: 300;
+    margin: 0 30px;
+    padding-bottom: 15px; 
+}
+.menu ul li a:hover {
+    border-bottom: 3px solid darkred;
+}
+@media screen and (max-width: 770px) {
+    .menu ul li a {margin: 0 10px}
+}
+@media screen and (max-width: 470px) {
+    .menu ul li {display: block;}
+    .menu ul li a:hover {border: none; color: darkred;}
+}
+
+.headerImg {
+    background: url("../img/primapenzion-main.jpg") center center no-repeat;
+    background-size: cover;
+    height: 530px;
+
+}
+.headerImg-kontakt {
+    background: url("../img/primapenzion-room.jpg") center center no-repeat;
+    background-size: cover;
+    height: 530px;
+
+}
+.headerImg-galerie {
+    background: url("../img/primapenzion-room2.jpg") center center no-repeat;
+    background-size: cover;
+    height: 530px;
+
+}
+.headerImg-rezervace {
+    background: url("../img/img8-min.jpg") center center no-repeat;
+    background-size: cover;
+    height: 530px;
+
+}
+.headerImg-404 {
+	background: none;
+	height: 0;
+}
+
+/*section*/
+
+.container {
+    width: 70%;
+    margin: auto;
+}
+.obsah {
+    padding: 70px 0 150px;
+    text-align: center;
+}
+h1 {
+    padding-bottom: 50px;
+    font-size: 50px;
+    text-align: center;
+}
+.obsah h2 {
+    padding-bottom: 35px;
+    color: chocolate;
+    font-size: 25px;
+    letter-spacing: 2px;
+
+}
+.obsah p {
+    line-height: 30px;
+    font-weight: 300;
+}
+/*footer*/
+.pata {
+    background: lightgrey;
+    padding-bottom: 40px;
+    text-align: center;
+
+}
+.pata .logo {
+    font-size: 35px;
+    padding-bottom: 25px;
+    display: block;
+}
+
+.footerInfo a {
+    color: #000;
+    text-decoration: none;
+    line-height: 25px;
+    font-weight: 700;
+}
+.footerInfo a:hover{
+    color: darkred;
+    text-decoration: underline;
+}
+span {
+    color: darkred;
+    font-weight: 700;
+    
+}
+.footerInfoI i {
+    font-size: 30px;
+    margin: 20px 5px;
+}
+/*Kontakt*/
+
+.kontakt {
+    padding: 100px 0;
+}
+.kontaktBox {
+    background: lightgray;
+    padding: 40px 20px;
+    line-height: 28px;
+}
+
+.kontaktObsah {
+    display: flex;
+    justify-content: space-between;
+
+}
+.kontaktObsah p i {
+    width: 40px;
+}
+
+.kontaktObsah p a {
+    text-decoration: none;
+    color: black;
+}
+.kontaktObsah p a:hover {
+    text-decoration: underline;
+    color: darkred;
+}
+.karty {
+    text-align: center;
+    margin: 20px;
+    font-size: 20px;
+}
+.karty i {
+    margin: 20px 5px;
+    font-size: 30px;
+}
+
+.map iframe {
+    width: 100%;
+    vertical-align: top;
+    margin: 5px 0;
+}
+.kontaktBox h2 {
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 10px;
+    margin-bottom: 30px;
+}
+.kontaktBox input[type="text"], .kontaktBox input[type="email"], .kontaktBox textarea {
+    padding: 15px;
+    display: block;
+    font-size: 16px;
+    width: 70%;
+    margin: 0 auto 15px;
+    font-family: 'Open Sans', sans-serif;
+    border: 1px solid #cccccc;
+}
+.kontaktBox textarea {
+    height: 130px;
+}
+.kontaktBox input[type="submit"] {
+    padding: 15px;
+    display: block;
+    font-size: 16px;
+    margin: 0 auto 15px;
+    background-color: darkred;
+    color: white;
+    text-transform: uppercase;
+    border-radius: 15px;
+    border: ridge;
+}
+.kontaktBox input[type="submit"]:hover {
+    background-color: red;
+    cursor: pointer;
+}
+/*Rezervace*/
+.rezervace {
+    padding: 100px 0;
+}
+.rezervaceBox {
+    background: lightgray;
+    padding: 40px 20px;
+    line-height: 28px;
+}
+.rezervaceBox h1 {
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 10px;
+    margin-bottom: 30px;
+}
+.rezervaceBox input[type="text"], .rezervaceBox input[type="email"], .rezervaceBox textarea, .rezervaceBox select, .rezervaceBox input[type="date"] {
+    padding: 15px;
+    display: block;
+    font-size: 16px;
+    width: 70%;
+    margin: 0 auto 15px;
+    font-family: 'Open Sans', sans-serif;
+    border: 1px solid #cccccc;
+}
+.rezervaceBox textarea {
+    height: 130px;
+}
+
+.rezervaceBox input[type="submit"] {
+    padding: 15px;
+    display: block;
+    font-size: 16px;
+    margin: 0 auto 15px;
+    background-color: darkred;
+    color: white;
+    text-transform: uppercase;
+    border-radius: 15px;
+    border: ridge;
+}
+.rezervaceBox input[type="submit"]:hover {
+    background-color: red;
+    cursor: pointer;
+}
+/*Rezervace*/
+/*Galerie*/
+
+.kontakt img {
+    width: 24%;
+}
+
